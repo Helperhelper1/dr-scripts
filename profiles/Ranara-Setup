@@ -1,0 +1,258 @@
+---
+
+training_manager_hunting_priority: true
+training_manager_priority_skills:
+  - Forging
+  - Perception
+  - Inner Fire
+  - Large Edged
+  - Twohanded Edged
+  - Stealth
+  - Athletics
+  - Outdoorsmanship
+  - Locksmithing
+
+hunting_info:
+- :zone:
+  - cave_trolls
+  - orc_bandits
+  :duration: 45
+
+saferoom_health_threshold: 7
+
+use_lockpick_ring: true
+
+# Gear settings
+# - :adjective: claw
+#   :name: guards
+#   :is_leather: false
+#   :hinders_lockpicking: false
+#   :is_worn: true
+gear:
+#--ARMOR
+- :adjective: claw
+  :name: guards
+  :is_leather: false
+  :hinders_lockpicking: true
+  :is_worn: true
+- :adjective: scale
+  :name: balaclava
+  :is_leather: false
+  :hinders_lockpicking: true
+  :is_worn: true
+- :adjective: scale
+  :name: shirt
+  :is_leather: false
+  :hinders_lockpicking: true
+  :is_worn: true
+- :adjective: scale
+  :name: greaves
+  :is_leather: false
+  :hinders_lockpicking: true
+  :is_worn: true
+#--DEFENSE
+- :adjective: parry
+  :name: stick
+  :is_leather: false
+  :hinders_lockpicking: false
+  :is_worn: true
+- :adjective: medium
+  :name: shield
+  :is_leather: true
+  :hinders_lockpicking: true
+  :is_worn: true
+#--WEAPONS
+- :adjective: light
+  :name: crossbow
+  :is_worn: true
+  :is_leather: true
+- :name: blade
+- :adjective: footman's
+  :name: flail
+- :name: falchion
+  :is_leather: false
+- :name: scimitar
+- :adjective: etched
+  :name: greathammer
+- :adjective: yew
+  :name: shortbow
+- :adjective: leather
+  :name: sling
+- :adjective: triple
+  :name: bola
+- :adjective: deobar
+  :name: cane
+  :is_worn: true
+- :adjective: narrow
+  :name: spear
+  :is_worn: true
+#--TOOLS
+- :name: rod
+  :adjective: stirring
+  :is_leather: true
+  :hinders_lockpicking:
+  :is_worn: false
+  :swappable: false
+  :tie_to: forger's belt
+- :name: bellows
+  :is_leather: false
+  :hinders_lockpicking: false
+  :is_worn: false
+  :tie_to: forger's belt
+- :adjective: curved
+  :name: shovel
+  :is_leather: false
+  :hinders_lockpicking: false
+  :is_worn: false
+  :tie_to: forger's belt
+- :adjective: diagonal
+  :name: hammer
+  :is_leather: false
+  :hinders_lockpicking: false
+  :is_worn: false
+  :tie_to: forger's belt
+- :adjective: straight
+  :name: tongs
+  :is_leather: false
+  :hinders_lockpicking: false
+  :is_worn: false
+  :tie_to: forger's belt
+
+gear_sets:
+  standard:
+  - claw guards
+  - scale balaclava
+  - scale shirt
+  - scale greaves
+  - parry stick
+  - deobar cane
+  - narrow spear
+  - medium shield
+
+#--Combat settings
+buff_nonspells:
+  berserk avalanche: 60
+
+training_abilities:
+  Charged Maneuver: 30
+
+weapon_training:
+  Large Edged: falchion
+  Twohanded Edged: blade
+  Offhand Weapon: scimitar
+
+priority_weapons:
+  - Large Edged
+  - Twohanded Edged
+  - Offhand Weapon
+
+use_stealth_attacks: false
+
+skinning:
+  skin: true
+  arrange_all: false
+  arrange_count: 0
+  tie_bundle: true
+
+# Non-combat settings
+exp_timers:
+  Augmentation: 60
+listen: true
+train_with_spells: false
+training_nonspells:
+  Augmentation: berserk avalanche
+
+#Standard skills to train in the crossing.
+crossing_training:
+- Appraisal
+- Athletics
+- Perception
+- Augmentation
+- Scholarship
+- Engineering
+- Stealth
+- Alchemy
+- Performance
+- Locksmithing
+- Forging
+- Outfitting
+- Outdoorsmanship
+
+#Mining. Implenty specifies the item you use to mine. the vein list picks all the ores/minerals you want to mine
+mine_implement: Shovel
+mining_buddy_vein_list: 
+- iron
+- covellite
+- lead
+- oravir
+- pewter
+- zinc
+- copper
+- tin
+- silver
+- gold
+- muracite
+- niniam
+- platinum
+- quelium
+- agonite
+- aldamdin
+- animite
+- audrualm
+- Damite
+- Darkstone
+- Diacan
+- Glaes
+- electrum
+- Haralun
+- Kertig
+- Lumium
+- Yellow gold
+- Coal
+mine_use_packet: true
+mining_skip_populated: true
+
+crafting_container: journey pack
+picking_box_storage: journey pack
+picking_box_source: journey pack
+
+#Forging_Tools is to specify what specific items you use to forge
+forging_tools:
+  - diagonal-peen hammer
+  - tong
+  - bellow
+  - shovel
+  - rod
+
+#Forging_belt specifies the belt itself and the items on it.
+forging_belt:
+  name: forger's belt
+  items:
+    - diagonal-peen hammer
+    - box-jaw tongs
+    - bellows
+    - shovel
+    - rod
+
+shaping_tools:
+- thin rasp
+- carving knife
+- drawknife
+- wood shaper
+- curved saw
+
+carving_tools:
+- iron rasp
+- rifflers
+- chisels
+
+outfitting_tools:
+- knitting needle
+
+favor_goal: 10
+favor_target: Triquetra
+
+instrument: Lyre
+
+train_workorders:
+- Blacksmithing
